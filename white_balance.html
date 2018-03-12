@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video Production</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="CSS/white_balance.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(index_images/white.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+  color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+p{
+  padding: 10px;
+}
+
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-list" style="color:white;"></span>
+  </button>
+     
+      <a class="navbar-brand fadeInDown animated" rel="home" href="#" >
+        <img style="max-width:700px; max-height: 100px"
+             src="index_images/logo.png">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse fadeInDown animated" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="index.html"> <p style="font-size: 20px">Home</p></a></li>
+        <li ><a href="apeture.html"> <p style="font-size: 20px">Aperture</p></a></li>
+        <li > <a href="iso.html"> <p style="font-size: 20px">ISO </p></a></li> 
+        <li ><a href="shutter_speed.html"> <p style="font-size: 20px">Shutter Speed</p></a></li> 
+        <li><a href="focal_length.html"> <p style="font-size: 20px">Focal Length</p></a></li> 
+        <li class="active"><a href="white_balance.html"> <p style="font-size: 20px">White Balance</p></a></li> 
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner">
+<div class="container">
+  <div class="row">
+ 
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+</head>
+<body>
+
+<div class="fadeInDown animated">
+    <h1> Balance  </h1>
+</div>
+
+<div class="container ">    
+  <div class="row">
+    <div class="col-sm-4 bounceInLeft animated ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">HOW DOES IT WORK?</div>
+        <p style="color: black">White balance is probably one of the most difficult concepts to get to grips with, but it is useful to gain an understanding of it. White balance is adjusting the how the colour white is interpreted under different lighting conditions. For example, fluorescent lighting often gives often gives off a strong blue hue, which is referred to as having a cool temperature. Whereas tungsten or incandescent bulbs often give of a yellowish glow which is associated with being warm. Most digital cameras are equipped with built in white balance settings, although most high-end cameras will allow users to manually adjust the white balance. </p>
+        <div class="panel-footer"></div>
+      </div>
+
+       <div class="col-sm-3">
+
+     <button type="button" class="btn btn-success" onclick="myFunction()">Reveal Images</button>
+     
+
+   </div>
+
+   <div class="col-sm-6 fadeInDown animated" id="image1">
+  <div class="panel panel-primary" >
+        <div class="panel-heading"> Incandescent Balance</div>
+        
+        <img src=index_images/white1.jpg >
+      <div class="panel-footer">
+        This images was taken using the incadencent balance. Since the incandecent lighting in this room was limited, there is
+          a blue tint which would be less visable providing the incandescent light was stronger.
+      </div>
+  </div>
+</div>
+ <div class="col-sm-6 fadeInDown animated" id="image2">
+  <div class="panel panel-primary">
+        <div class="panel-heading">Fluorescent Balance</div>
+        <img src=index_images/white2.jpg >
+        <div class="panel-footer"> This image shows a more accurate representation as it uses the fluorescent balance, which was the light used
+          to illuminate the room.
+  </div>
+</div>
+
+    </div>
+   
+    </div>
+   
+  
+
+
+
+<div class="footer fadeInUp animated">
+  <p>CAMTECH®</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("image1");
+    var y = document.getElementById("image2");
+    if (x.style.display === "block")  {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+
+     if (y.style.display === "block")  {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+
+}
+</script>

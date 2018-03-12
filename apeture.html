@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video Production</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="CSS/aperture.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(index_images/apeture.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+  color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+p{
+  padding: 10px;
+}
+
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-list" style="color:white;"></span>
+  </button>
+     
+      <a class="navbar-brand fadeInDown animated" rel="home" href="#" >
+        <img style="max-width:700px; max-height: 100px"
+             src="index_images/logo.png">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse fadeInDown animated" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="index.html"> <p style="font-size: 20px">Home</p></a></li>
+        <li class="active"><a href="apeture.html"> <p style="font-size: 20px">Aperture</p></a></li>
+        <li><a href="iso.html"> <p style="font-size: 20px">ISO </p></a></li> 
+        <li><a href="shutter_speed.html"> <p style="font-size: 20px">Shutter Speed</p></a></li> 
+        <li><a href="focal_length.html"> <p style="font-size: 20px">Focal Length</p></a></li> 
+        <li><a href="white_balance.html"> <p style="font-size: 20px">White Balance</p></a></li> 
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner">
+<div class="container">
+  <div class="row">
+ 
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+</head>
+<body>
+
+      <div class="fadeInDown animated">
+    <h1> APERTURE </h1>
+</div>
+
+<div class="container ">    
+  <div class="row">
+    <div class="col-sm-4 bounceInLeft animated ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">HOW DOES IT WORK?</div>
+        <p style="color: black"> One of the three pillars to understanding both photography and videography is getting to grips with the aperture of the camera. The aperture refers to the opening of the lens’s diaphragm controlling the amount of light which can be passed through onto the sensor. The numerical measurement of aperture is measured in F-sops normally ranging from f1.4 stepping through to f22. The lower the F number, the larger the aperture allowing for more exposure and the lower the F number the less exposure as the aperture would be smaller. In cinematic film thisphrase is also reffered to as T-stops. </p>
+<p style="color: black">Depth of field also referred to as Bokeh in Japanese, is defined as the zone of sharpness in front and behind the target subject. Portraits is a good example as they tend to have a very shallow depth of field, as the idea is to focus on the subject which will appear sharp whilst the background will be out of focus. Another example is landscapes, landscapes tend to have a very deep depth of field as the idea is to capture everything in frame to a good degree of sharpness. Relating this back to F/stop, the portrait would use an F number of around 1.4-2.8 respectively whilst a landscape may use anything from F/11 and up.
+ </p>
+        <div class="panel-footer"></div>
+      </div>
+
+       <div class="col-sm-3">
+
+     <button type="button" class="btn btn-success" onclick="myFunction()">Reveal Images</button>
+     
+
+   </div>
+
+   <div class="col-sm-6 fadeInDown animated" id="image1">
+  <div class="panel panel-primary" >
+        <div class="panel-heading" >F1.8</div>
+        
+        <img src=index_images/app1.jpg >
+         <div class="panel-footer">
+       As you can see, the can is in focus, whilst the background is blurred. This is a shallow depth of field.
+      </div>
+        
+  </div>
+</div>
+ <div class="col-sm-6 fadeInDown animated" id="image2">
+  <div class="panel panel-primary">
+        <div class="panel-heading">F11</div>
+        <img src=index_images/app2.jpg >
+          <div class="panel-footer">
+       As you can see, the can is in focus, along with the background. This is a deep depth of field.
+      </div>
+        
+  </div>
+</div>
+    </div>
+   
+
+
+
+
+<div class="footer fadeInUp animated">
+  <p>CAMTECH®</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("image1");
+    var y = document.getElementById("image2");
+    if (x.style.display === "block")  {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+
+     if (y.style.display === "block")  {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+
+}
+</script>

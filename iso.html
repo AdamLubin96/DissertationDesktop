@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video Production</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="CSS/iso.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(index_images/iso.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+  color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+p{
+  padding: 10px;
+}
+
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-list" style="color:white;"></span>
+  </button>
+     
+      <a class="navbar-brand fadeInDown animated" rel="home" href="#" >
+        <img style="max-width:700px; max-height: 100px"
+             src="index_images/logo.png">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse fadeInDown animated" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="index.html"> <p style="font-size: 20px">Home</p></a></li>
+        <li ><a href="apeture.html"> <p style="font-size: 20px">Aperture</p></a></li>
+        <li class="active"><a href="iso.html"> <p style="font-size: 20px">ISO </p></a></li> 
+        <li><a href="shutter_speed.html"> <p style="font-size: 20px">Shutter Speed</p></a></li> 
+        <li><a href="focal_length.html"> <p style="font-size: 20px">Focal Length</p></a></li> 
+        <li><a href="white_balance.html"> <p style="font-size: 20px">White Balance</p></a></li> 
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner">
+<div class="container">
+  <div class="row">
+ 
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+</head>
+<body>
+
+      <div class="fadeInDown animated">
+    <h1> ISO </h1>
+</div>
+
+<div class="container ">    
+  <div class="row">
+    <div class="col-sm-4 bounceInLeft animated ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">HOW DOES IT WORK?</div>
+        <p style="color: black"> In traditional film-based photography, ASA ( American Standards Association) was used to determine how sensitive the film was to light. It was measured from 100 and the value would double each time you increment, for example, 100, 200, 400, 800 and 1600. In digital photography, the term is now referred to as ISO, but the values still remain the same, but instead the numbers contribute to the sensitivity of the image sensor. The lower the value, the less sensitive to light, whilst the higher value will make the sensor more sensitive to light. </p>
+<p style="color: black">Higher ISO settings are generally used in darker environments to get a faster shutter speed. One example may be an indoor sport such as gymnastics, where you need to get an action shot in low light conditions. However, the more you increase the ISO the sensor will become more susceptible to noise, creating soft images and video. Therefore, it is always recommended to have good lighting before hand rather than trying to make amendments in post-production. Although more modern cameras are becoming less sensitive to noise and cameras that have larger full frame sensors are resistant to noise in low light.
+ </p>
+        <div class="panel-footer"></div>
+      </div>
+
+ <div class="col-sm-3">
+
+     <button type="button" class="btn btn-success" onclick="myFunction()">Reveal Images</button>
+     
+
+   </div>
+
+
+   <div class="col-sm-6 fadeInDown animated" id="image1">
+  <div class="panel panel-primary" >
+        <div class="panel-heading" >ISO 200</div>
+        
+        <img src=index_images/iso1.png >
+        <div class="panel-footer">
+       This image was taken in good lighting with a low ISO sensitivity.
+      </div>
+  </div>
+</div>
+ <div class="col-sm-6 fadeInDown animated" id="image2">
+  <div class="panel panel-primary">
+        <div class="panel-heading">ISO 3200</div>
+        <img src=index_images/iso2.png >
+        <div class="panel-footer">
+       This image was taken in poor light, with an incresed ISO sensitivity. If you look closely, you will notice noise.
+      </div>
+  </div>
+</div>
+
+    </div>
+   
+   
+
+
+
+<div class="footer fadeInUp animated">
+  <p>CAMTECH®</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("image1");
+    var y = document.getElementById("image2");
+    if (x.style.display === "block")  {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+
+     if (y.style.display === "block")  {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+
+}
+</script>

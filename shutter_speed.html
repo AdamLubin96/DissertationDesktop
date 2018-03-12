@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video Production</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="CSS/shutter_speed.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(index_images/shutter.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+  color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+  padding: 10px;
+}
+
+
+</style>
+
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-list" style="color:white;"></span>
+  </button>
+     
+      <a class="navbar-brand fadeInDown animated" rel="home" href="#" >
+        <img style="max-width:700px; max-height: 100px"
+             src="index_images/logo.png"
+             >
+    </a>
+    </div>
+    <div class="collapse navbar-collapse fadeInDown animated" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="index.html"> <p style="font-size: 20px">Home</p></a></li>
+        <li ><a href="apeture.html"> <p style="font-size: 20px">Aperture</p></a></li>
+        <li > <a href="iso.html"> <p style="font-size: 20px">ISO </p></a></li> 
+        <li class="active"><a href="shutter_speed.html"> <p style="font-size: 20px">Shutter Speed</p></a></li> 
+        <li><a href="focal_length.html"> <p style="font-size: 20px">Focal Length</p></a></li> 
+        <li><a href="white_balance.html"> <p style="font-size: 20px">White Balance</p></a></li> 
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner">
+<div class="container">
+  <div class="row">
+ 
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+</head>
+<body>
+
+    <div class="fadeInDown animated">
+    <h1> SHUTTER  </h1>
+     
+</div>
+
+
+
+<div class="container ">    
+  <div class="row">
+    <div class="col-sm-4 bounceInLeft animated ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">HOW DOES IT WORK?</div>
+        <p style="color: black"> Shutter speed is determined by the amount of time that the shutter remains open. In the early days of film, photographers and videographers would have to use trial and error and judge the correct amount of exposure needed for a given image. That would of course lead to a lot of time being wasted on development if the image is over or under exposed. In the age of digital photography this has been made a lot simpler with image playback, and most modern mirrorless cameras giving you live readings on areas that are over or under exposed. </p>
+<p style="color: black">Relating back to shutter speed, the numerical aspect is measured in either seconds or fractions of a second, with the larger denominator contributing to a faster shutter speed. For example, 1/500 would be a lot quicker than 1/50 of a second. In film, the general rule is that the shutter speed should be double that of your frame rate. The reason for that is that values lower than that will introduce a lot of blur and soften the overall image, especially if there is sufficient movement. In order to capture fast moving images, a high shutter speed is required, to eliminate the motion blur.
+ </p>
+        <div class="panel-footer"></div>
+      </div>
+       <div class="col-sm-3">
+
+     <button type="button" class="btn btn-success" onclick="myFunction()">Reveal Images</button>
+     
+
+   </div>
+
+   <div class="col-sm-6 fadeInDown animated" id="image1">
+  <div class="panel panel-primary" >
+        <div class="panel-heading" >1/60</div>
+        
+        <img src=index_images/shutter1.jpg >
+        <div class="panel-footer">
+       As you can see, because the sensor is open for a long period of time, there is motion blur within the fan blades.
+      </div>
+        
+  </div>
+</div>
+ <div class="col-sm-6 fadeInDown animated" id="image2">
+  <div class="panel panel-primary">
+        <div class="panel-heading">1/1000</div>
+        <img src=index_images/shutter2.png >
+        <div class="panel-footer">
+       The shutter is open for only a breif period which is as quicker or quiecker than the fans speed of rotation.
+       Which is why it appears the fan blades are stationary.
+      </div>
+  </div>
+</div>
+
+    </div>
+   
+   
+
+
+
+<div class="footer fadeInUp animated">
+  <p>CAMTECH®</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("image1");
+    var y = document.getElementById("image2");
+    if (x.style.display === "block")  {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+
+     if (y.style.display === "block")  {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+
+}
+</script>
